@@ -14,13 +14,14 @@ html {
 
 body {
     max-width: 1200px;
+    padding: 0 2rem 0 2rem;
     margin: 0 auto 0 auto;
 }
 
 @media (max-width: 720px) {
     body {
         max-width: 100%;
-        padding: 0 1em 0 1em;
+        padding: 0 1rem 0 1rem;
     }
 }
 
@@ -34,49 +35,68 @@ iframe {
 }
 
 
-/* Structure */
+/* Header */
 
 header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
-    border-bottom: 1px solid lightblue;
     width: 100%;
     height: auto;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1rem 0 1rem 0;
 }
 
-#logo {
-    margin: 1em 0 1em 0;
+nav.right {
+    display: block;
 }
 
-nav {
-    display: inline;
+@media (max-width: 720px) {
+    nav.right {
+        display: none;
+    }
 }
+
+
+/* Lists */
 
 nav ul li {
     display: inline;
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+ul,
+ol {
+    margin: 2em 0 2em 0;
+    padding: 0;
+    list-style-position: inside;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 
 /* Typography*/
 
 h1 {
-    font-size: 5em;
+    font-size: 5rem;
     line-height: 100%;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.5;
+    font-weight: 400;
+    width: 65%;
+    color: #94A3B8;
 }
 
 h3,
 h4 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.4;
-    margin: 0 0 0.25em 0;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
 }
 
 h4 {
@@ -84,7 +104,7 @@ h4 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 150%;
 }
 
@@ -98,8 +118,11 @@ a:hover {
 
 @media (max-width: 720px) {
     h1 {
-        font-size: 2em;
+        font-size: 2rem;
         line-height: 100%;
+    }
+    #hero h2 {
+        width: 100%;
     }
 }
 
@@ -108,24 +131,20 @@ a:hover {
 
 section {
     height: 75vh;
-    padding: 4em 0 4em 0;
-}
-
-section#hero {
-    border-bottom: 1px solid lightgray;
+    padding: 8rem 0 8rem 0;
 }
 
 .left {
     float: left;
     width: 50%;
-    padding: 0 1em 0 1em;
+    padding: 0 1rem 0 1rem;
     text-align: left;
 }
 
 .right {
     float: right;
     width: 50%;
-    padding: 0 1em 0 1em;
+    padding: 0 1rem 0 1rem;
     text-align: right;
 }
 
@@ -135,7 +154,14 @@ section div.left:after {
     clear: both;
 }
 
+section#hero {
+    margin-top: 8rem;
+}
+
 @media (max-width: 720px) {
+    section {
+        padding: 4rem 0 4rem 0;
+    }
     section div.left {
         width: 100%;
         padding: 0px;
@@ -144,4 +170,45 @@ section div.left:after {
         width: 100%;
         padding: 0px;
     }
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    margin: 1em 0 1em 0;
+}
+
+thead {
+    border-bottom: 1px solid lightgray;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    padding: 0.125em 0 0.125em 0;
+}
+
+td.stage {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+td.status.to-be-completed {
+    color: lightgray
+}
+
+td.status.in-progress {
+    color: in
+}
+
+
+/* Footer */
+
+footer {
+    margin: 2rem auto 2rem auto;
+    text-align: center;
 }
