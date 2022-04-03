@@ -48,11 +48,18 @@ header {
     padding: 1rem 0 1rem 0;
 }
 
+div.left {
+    font-weight: 500;
+}
+
 nav.right {
     display: block;
 }
 
 @media (max-width: 720px) {
+    header {
+        padding: 0
+    }
     nav.right {
         display: none;
     }
@@ -100,6 +107,7 @@ h4 {
 }
 
 h4 {
+    margin: 0 0 1rem 0;
     color: #94A3B8
 }
 
@@ -170,6 +178,12 @@ section#hero {
         width: 100%;
         padding: 0px;
     }
+    .left {
+        margin: 2rem 0 2rem 0
+    }
+    .right {
+        margin: 2rem 0 2rem 0
+    }
 }
 
 
@@ -178,14 +192,12 @@ section#hero {
 table {
     width: 100%;
     margin: 1em 0 1em 0;
-}
-
-thead {
-    border-bottom: 1px solid lightgray;
+    border-collapse: collapse;
 }
 
 th {
     font-weight: bold;
+    padding: 0.5rem 0;
 }
 
 td {
