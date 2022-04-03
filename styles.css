@@ -1,0 +1,147 @@
+/* Page Elements */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    color: #1E293B;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+@media (max-width: 720px) {
+    body {
+        max-width: 100%;
+        padding: 0 1em 0 1em;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/* Structure */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: 1px solid lightblue;
+    width: 100%;
+    height: auto;
+}
+
+#logo {
+    margin: 1em 0 1em 0;
+}
+
+nav {
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5em 0 0.5em;
+}
+
+
+/* Typography*/
+
+h1 {
+    font-size: 5em;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+h3,
+h4 {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin: 0 0 0.25em 0;
+}
+
+h4 {
+    color: #94A3B8
+}
+
+p {
+    font-size: 1em;
+    line-height: 150%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 2em;
+        line-height: 100%;
+    }
+}
+
+
+/* Sections */
+
+section {
+    height: 75vh;
+    padding: 4em 0 4em 0;
+}
+
+section#hero {
+    border-bottom: 1px solid lightgray;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    padding: 0 1em 0 1em;
+    text-align: left;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    padding: 0 1em 0 1em;
+    text-align: right;
+}
+
+section div.left:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 720px) {
+    section div.left {
+        width: 100%;
+        padding: 0px;
+    }
+    section div.right {
+        width: 100%;
+        padding: 0px;
+    }
+}
