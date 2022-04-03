@@ -25,15 +25,6 @@ body {
     }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-iframe {
-    width: 100%;
-}
-
 
 /* Header */
 
@@ -63,6 +54,18 @@ nav.right {
     nav.right {
         display: none;
     }
+}
+
+
+/* Elements */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
 }
 
 
@@ -211,10 +214,6 @@ td.stage {
 
 td.status.to-be-completed {
     color: lightgray
-}
-
-td.status.in-progress {
-    color: in
 }
 
 
